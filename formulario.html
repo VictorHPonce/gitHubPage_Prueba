@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body class="fondo">
+    <div class="container">
+        <h1>Breaking Bad - Que comience el juego!</h1>
+        <form action="mailto:raul.rodriguez@proeducaglobal.com">
+            <div class="separacion">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="separacion">
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+            </div>
+            <div class="separacion">
+                <label for="direccion">Dirección Postal:</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <div class="separacion">
+                <label for="sexo">Sexo:</label>
+                <input type="radio" id="hombre" name="sexo" value="hombre">
+                <label for="hombre">Hombre</label>
+                <input type="radio" id="mujer" name="sexo" value="mujer">
+                <label for="mujer">Mujer</label>
+            </div>
+            <div class="separacion">
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+            </div>
+            <div class="separacion">
+                <label for="personaje">Selecciona un personaje:</label>
+                <select id="personaje" name="personaje">
+                    <option value="Jessie Pinkman">Jessie Pinkman</option>
+                    <option value="Walter White">Walter White</option>
+                    <option value="Saul Goodman">Saul Goodman</option>
+                    <option value="Gustavo Fring">Gustavo Fring</option>
+                    <option value="Pollos Hermanos">Pollos Hermanos</option>
+                    <option value="Otros personajes">Otros personajes</option>
+                </select>
+            </div>
+            <div class="separacion">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+            </div>
+            <div class="separacion">
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Borrar">
+                <input type="file" name="adjuntar_archivos">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
